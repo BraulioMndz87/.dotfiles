@@ -7,7 +7,7 @@ horizontal_padding = 10
 frame_width = 2
 frame_color = "#5e81ac"
 
-font = JetBrainsMono 10
+font = Meslo LGM Nerd Font 10
 markup = full
 format = "<b>%s</b>\n%b"
 
