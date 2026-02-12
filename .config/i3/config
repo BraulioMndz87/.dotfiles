@@ -15,6 +15,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id unclutter
 # Notifications
 exec --no-startup-id dunst
+# Clipboard
+exec --no-startup-id xclip
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -28,6 +30,9 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# Brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
 floating_modifier $mod
 
@@ -169,4 +174,11 @@ hide_edge_borders smart
 gaps outer 4
 gaps inner 4
 smart_gaps on
+
+# Gruvbox-material dark
+client.focused          #458588 #282828 #ebdbb2 #83a598 #458588
+client.unfocused        #3c3836 #1d2021 #928374 #3c3836 #3c3836
+client.focused_inactive #504945 #282828 #d5c4a1 #504945 #504945
+client.urgent           #cc241d #cc241d #ebdbb2 #cc241d #cc241d
+
 
