@@ -4,7 +4,7 @@ font pango:Meslo LGM Nerd Font 11
 
 # Whatsapp
 assign [class="elecwhat"] $ws9
-# Zoom
+#Zoom
 assign [class="zoom"] $ws10
 
 # Nitrogen
@@ -54,7 +54,7 @@ bindsym $mod+shift+f exec --no-startup-id thunar
 bindsym $mod+z exec --no-startup-id zen-browser
 # Powermenu
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
-# Desactivate notifications
+# Stop notifications
 bindsym $mod+n exec --no-startup-id dunstctl set-paused toggle
 
 # change focus
