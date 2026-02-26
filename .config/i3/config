@@ -2,6 +2,14 @@ set $mod Mod4
 
 font pango:Meslo LGM Nerd Font 11
 
+# Zen
+assign [class="zen-browser"] $ws1
+# Vscode
+assign [class="code"] $ws2
+# Freetube
+assign [class="freetube"] $ws5
+# Discord
+assign [class="discord"] $ws8
 # Whatsapp
 assign [class="elecwhat"] $ws9
 # Zoom
