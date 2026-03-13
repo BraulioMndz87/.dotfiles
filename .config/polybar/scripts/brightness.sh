@@ -6,7 +6,7 @@ MAX=$(brightnessctl max)
 PERCENT=$((BRIGHTNESS * 100 / MAX))
 
 ICON_COLOR="#7daea3"     
-PERCENT_COLOR="#d4be98" 
+PERCENT_COLOR="#d8dee9" 
 
 # Output percentage
 echo "%{F$ICON_COLOR}%{F-} %{F$PERCENT_COLOR}$PERCENT%%{F-}"
