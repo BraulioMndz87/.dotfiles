@@ -5,7 +5,7 @@ BRIGHTNESS=$(brightnessctl get)
 MAX=$(brightnessctl max)
 PERCENT=$((BRIGHTNESS * 100 / MAX))
 
-ICON_COLOR="#7daea3"     
+ICON_COLOR="#d8a657"     
 PERCENT_COLOR="#d8dee9" 
 
 # Output percentage

@@ -10,8 +10,6 @@ assign [class="code"] $ws2
 assign [class="freetube"] $ws5
 # Discord
 assign [class="discord"] $ws8
-# Whatsapp
-assign [class="elecwhat"] $ws9
 # Zoom
 assign [class="zoom"] $ws10
 
