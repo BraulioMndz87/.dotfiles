@@ -21,7 +21,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      -- 🔧 Lua
       vim.lsp.config("lua_ls", {
         settings = {
           Lua = {
