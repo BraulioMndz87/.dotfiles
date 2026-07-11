@@ -5,6 +5,9 @@ return {
     "hrsh7th/cmp-buffer",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+    { "roobert/tailwindcss-colorizer-cmp.nvim", opts = {
+      color_square_width = 2,
+    } },
   },
   config = function()
     local cmp = require("cmp")
@@ -37,8 +40,14 @@ return {
         end, { "i", "s" }),
       }),
 
+      formatting = {
+        format = function(entry, item)
+          return require("tailwindcss-colorizer-cmp").formatter(entry, item)
+        end,
+      },
+
       sources = cmp.config.sources({
-        { name = "nav" },
+        { name = "nvim_lsp" },
         { name = "luasnip" },
       }, {
         { name = "buffer" },

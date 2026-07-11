@@ -30,13 +30,9 @@ return {
           },
         },
       })
-
       vim.lsp.config("pyright", {})
-
       vim.lsp.config("clangd", {})
-
       vim.lsp.config("ts_ls", {})
-
       vim.lsp.enable({
         "lua_ls",
         "pyright",
